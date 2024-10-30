@@ -1,0 +1,115 @@
+﻿<Window x:Class="Candidate_GUI_WPF.CandidateProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Candidate_GUI_WPF"
+        mc:Ignorable="d"
+        Title="CandidateProfileWindow" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Define Columns: Sidebar (Width=200px) + Main content -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar / Navbar -->
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#3AA9AD" Offset="0"/>
+                    <GradientStop Color="#3AA9AD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Canvas>
+                    <Polygon Points="0,20 200,140 0,270" Fill="#4EB1B6"/>
+                    <Polygon Points="100,400 200,370 180,470" Fill="#4EB1B6"/>
+                    <Ellipse Margin="100 500 0 0" Width="40" Height="40" Fill="#4EB1B6"/>
+                    <Ellipse Margin="50 400 0 0" Width="40" Height="40" Fill="#4EB1B6"/>
+                </Canvas>
+                <StackPanel VerticalAlignment="Center" Margin="10">
+                    <TextBlock Text="Welcome, User" Foreground="White" FontWeight="Bold" FontSize="16" Margin="5"/>
+                    <Button Content="Home" Style="{StaticResource navBarButton}" />
+                    <Button Content="Candidate Profile" Style="{StaticResource navBarButton}" 
+                    FontWeight="Bold" 
+                    FontSize="16" 
+                    Foreground="#FFDD57" 
+                    Background="#1F5A5B"/>
+                    <Button Content="Job Posting" Style="{StaticResource navBarButton}" Click="btnJobPosting_Click" />
+                    <Button x:Name="btnSignOut" Click="btnSignOut_Click" Content="Sign Out" Style="{StaticResource signOutButton}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Background for the main content with fixed height 600 -->
+        <Border Grid.Column="1" Background="#F0F0F0" CornerRadius="10" Height="600">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Candidate Profile" Style="{StaticResource labelText}" FontSize="30" FontWeight="Bold" Margin="5" TextAlignment="Center"/>
+
+                    <!-- DataGrid for displaying records -->
+                    <DataGrid x:Name="dtgCandidateProfile" AutoGenerateColumns="True" Height="150" Margin="5" Loaded="dtgCandidate_Loaded" SelectionChanged="dtgCandidateProfile_SelectionChanged" CanUserAddRows="False"/>
+
+                    <!-- Input fields -->
+                    <Grid Margin="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Candidate ID and Job Posting -->
+                        <TextBlock Text="Candidate ID:" Grid.Row="0" Grid.Column="0" Style="{StaticResource labelText}" Margin="3"/>
+                        <TextBox x:Name="txtCandidateID" Grid.Row="0" Grid.Column="1" Width="330" Height="30" Margin="3" VerticalContentAlignment="Center"/>
+
+                        <TextBlock Text="Job Posting:" Grid.Row="1" Grid.Column="0" Style="{StaticResource labelText}" Margin="3"/>
+                        <ComboBox x:Name="cbJobPosting" Grid.Row="1" Grid.Column="1" Width="330" Height="30" Margin="3" DisplayMemberPath="JobPostingTitle" SelectedValuePath="PostingId"/>
+
+                        <TextBlock Text="Full Name:" Grid.Row="2" Grid.Column="0" Style="{StaticResource labelText}" Margin="3"/>
+                        <TextBox x:Name="txtFullName" Grid.Row="2" Grid.Column="1" Height="30" Width="330" Margin="3" VerticalContentAlignment="Center"/>
+                    </Grid>
+
+                    <!-- Description, ImgUrl and DatePicker -->
+                    <Grid Margin="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Description -->
+                        <TextBlock Text="Description:" Grid.Row="0" Grid.Column="0" Style="{StaticResource labelText}" Margin="3"/>
+                        <TextBox x:Name="txtDescription" Grid.Row="0" Grid.Column="1" Width="330" Height="70" AcceptsReturn="True" TextWrapping="Wrap" Margin="3" VerticalContentAlignment="Top"/>
+
+                        <!-- Img URL -->
+                        <TextBlock Text="Img URL:" Grid.Row="1" Grid.Column="0" Style="{StaticResource labelText}" Margin="3"/>
+                        <TextBox x:Name="txtImgUrl" Grid.Row="1" Grid.Column="1" Height="30" Width="330" Margin="3"/>
+
+                        <!-- Birth Day -->
+                        <TextBlock Text="Birth Day:" Grid.Row="2" Grid.Column="0" Style="{StaticResource labelText}" Margin="3"/>
+                        <DatePicker x:Name="dpBirthDay" Grid.Row="2" Grid.Column="1" Height="25" Width="330" Margin="3"/>
+                    </Grid>
+
+                    <!-- Buttons -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="3">
+                        <Button x:Name="btnAdd" Click="btnAdd_Click" Content="Add" Style="{StaticResource buttonGreen}" Width="120"/>
+                        <Button Content="Update" x:Name="btnUpdate" Click="btnUpdate_Click" Style="{StaticResource buttonYellow}" Width="120"/>
+                        <Button Content="Delete" x:Name="btnDelete" Click="btnDelete_Click" Style="{StaticResource buttonRed}" Width="120"/>
+                        <Button Content="Close" x:Name="btnClose" Click="btnClose_Click" Style="{StaticResource buttonGray}" Width="120"/>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+
+
+</Window>
