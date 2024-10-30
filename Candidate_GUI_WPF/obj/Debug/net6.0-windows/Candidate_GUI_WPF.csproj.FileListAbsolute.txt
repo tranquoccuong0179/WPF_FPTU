@@ -148,3 +148,4 @@ C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_GUI_WPF\obj\Debug\
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_GUI_WPF\obj\Debug\net6.0-windows\ref\Candidate_GUI_WPF.dll
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_GUI_WPF\bin\Debug\net6.0-windows\appsettings.json
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_GUI_WPF\obj\Debug\net6.0-windows\Candidate_GUI_WPF_Content.g.cs
+C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_GUI_WPF\obj\Debug\net6.0-windows\Candidate_GUI_WPF.sourcelink.json

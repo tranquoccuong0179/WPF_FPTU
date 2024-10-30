@@ -36,3 +36,4 @@ C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_Service\obj\Debug\
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_Service\obj\Debug\net6.0\refint\Candidate_Service.dll
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_Service\obj\Debug\net6.0\Candidate_Service.pdb
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_Service\obj\Debug\net6.0\ref\Candidate_Service.dll
+C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_Service\obj\Debug\net6.0\Candidate_Service.sourcelink.json

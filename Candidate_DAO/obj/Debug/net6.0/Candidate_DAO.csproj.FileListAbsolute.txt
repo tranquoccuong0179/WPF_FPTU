@@ -28,3 +28,4 @@ C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_DAO\obj\Debug\net6
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_DAO\obj\Debug\net6.0\refint\Candidate_DAO.dll
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_DAO\obj\Debug\net6.0\Candidate_DAO.pdb
 C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_DAO\obj\Debug\net6.0\ref\Candidate_DAO.dll
+C:\SEM7\PRN221PE_FA22_TrialTest_Tue_Slot02\WPF_FPTU\Candidate_DAO\obj\Debug\net6.0\Candidate_DAO.sourcelink.json

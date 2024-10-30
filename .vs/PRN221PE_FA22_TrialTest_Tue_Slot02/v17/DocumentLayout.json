@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SEM7\\PRN221PE_FA22_TrialTest_Tue_Slot02\\WPF_FPTU\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FAD4288-0E4F-4C1C-890F-7C3B3B64DB8B}|Candidate_GUI_WPF\\Candidate_GUI_WPF.csproj|c:\\sem7\\prn221pe_fa22_trialtest_tue_slot02\\wpf_fptu\\candidate_gui_wpf\\candidateprofilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3FAD4288-0E4F-4C1C-890F-7C3B3B64DB8B}|Candidate_GUI_WPF\\Candidate_GUI_WPF.csproj|solutionrelative:candidate_gui_wpf\\candidateprofilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CandidateProfileWindow.xaml",
+              "DocumentMoniker": "C:\\SEM7\\PRN221PE_FA22_TrialTest_Tue_Slot02\\WPF_FPTU\\Candidate_GUI_WPF\\CandidateProfileWindow.xaml",
+              "RelativeDocumentMoniker": "Candidate_GUI_WPF\\CandidateProfileWindow.xaml",
+              "ToolTip": "C:\\SEM7\\PRN221PE_FA22_TrialTest_Tue_Slot02\\WPF_FPTU\\Candidate_GUI_WPF\\CandidateProfileWindow.xaml",
+              "RelativeToolTip": "Candidate_GUI_WPF\\CandidateProfileWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-30T14:40:59.736Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
